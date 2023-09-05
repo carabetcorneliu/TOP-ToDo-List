@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>TOP - // To Do List</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script defer src="main.js"></script>
+</head>
+
+<body>
+  <div class="bodyContainer">
+    <div class="headerContainer">
+      // To Do List
+    </div>
+    <div class="pageContainer">
+      <div class="sidebarContainer">
+        <ul class="nav">
+          <div class="addButtons">
+            <label for="sectionOne">todo's</label>
+            <button type="button" id="addToDo">+</button>
+          </div>
+          <section id="sectionOne">
+            <li><button type="button">Today</button></li>
+            <li><button type="button">This Week</button></li>
+            <li><button type="button">This Month</button></li>
+            <li><button type="button">All</button></li>
+          </section>
+          <div class="addButtons">
+            <label for="sectionTwo">projects</label>
+            <button type="button" id="addProject">+</button>
+          </div>
+          <section id="sectionTwo">
+            <li><button type="button">current</button></li>
+          </section>
+        </ul>
+      </div>
+
+      <div class="mainContainer">
+        <table>
+          <caption>Things you plan to do Today</caption>
+          <thead>
+            <tr>
+              <th>completed</th>
+              <th>title</th>
+              <th>description</th>
+              <th>dueDate</th>
+              <th>project</th>
+              <th>priority</th>
+              <th>notes</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><input type="checkbox" name="" id=""></td>
+              <td>clean dishes today</td>
+              <td>at home</td>
+              <td>08.22.2023</td>
+              <td></td>
+              <td>high</td>
+              <td>just do it today!</td>
+              <td><button type="button" class="remove">remove</button></td>
+            </tr>
+            <tr>
+              <td><input type="checkbox" name="" id=""></td>
+              <td>clean dishes today</td>
+              <td>at home</td>
+              <td>08.22.2023</td>
+              <td></td>
+              <td>high</td>
+              <td>just do it today!</td>
+              <td><button type="button" class="remove">remove</button></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="footerContainer">
+      <p>The Odin Project 2023</p>
+      <p>/ Carabet Corneliu</p>
+    </div>
+  </div>
+
+  <div class="boxAdd" id="hidden">
+    <form id="addForm" action="index.html" method="post" autocomplete="on">
+      <div class="legendContainer">
+        <legend>Add</legend>
+        <div class="checkBoxContainer">
+          <input type="checkbox" name="" id="todo">
+          <label for="todo">todo</label>
+          <input type="checkbox" name="" id="project">
+          <label for="project">project</label>
+        </div>
+        <div class="closeAddBox">
+          <button type="button" id="closeBox">X</button>
+        </div>
+      </div>
+      <div class="formRow">
+        <div class="formCol">
+          <label for="title">Title</label>
+          <input type="text" name="title" id="title" required>
+        </div>
+        <div class="formCol">
+          <label for="priority">Priority</label>
+          <select name="priority" id="priority">
+            <option value="low">Low</option>
+            <option value="medium" selected>Medium</option>
+            <option value="high">High</option>
+          </select>
+        </div>
+      </div>
+      <div class="formRow">
+        <div class="formCol">
+          <label for="date">Date</label>
+          <input type="date" name="date" id="date">
+        </div>
+        <div class="formCol">
+          <label for="description">Description</label>
+          <input type="text" name="description" id="description">
+        </div>
+      </div>
+      <div class="formRowDouble">
+        <label for="notes">//ToDo Notes</label>
+        <textarea name="notes" id="notes" cols="30" rows="15"></textarea>
+      </div>
+      <div class="submit">
+        <button type="submit">Add</button>
+      </div>
+    </form>
+  </div>
+</body>
+
+</html>
